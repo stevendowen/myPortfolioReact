@@ -1,6 +1,13 @@
 import '../css/App.css';
+import db from '../firebase.js';
+
+db.collection('test').get().then(querySnapshot => { 
+  const data = querySnapshot.docs.map(doc => doc.data());
+  console.log(data);
+});
 
 function App() {
+  // const firebaseApp = firebase.firestore('test/Jk7wyTHGfkrsC7KOPL0V');
   return (
     <div className="App">
       <header className="App-header">
@@ -17,12 +24,19 @@ function App() {
         </a>
       </header>
       <div className="ui placeholder segment" >
-        <div class="ui icon header">
-          <i class="pdf file outline icon"></i>
+        <div className="ui icon header">
+          <i className="pdf file outline icon"></i>
           No documents are listed for this customer.
         </div>
-        <div class="ui primary button">Add Document</div>
+        <div className="ui primary button">Add Document</div>
       </div>
+      {/* <div>
+      <h1>React & Firebase</h1>
+      <h2>By @farazamiruddin</h2>
+      <code>
+        <pre>{JSON.stringify(firebaseApp)}</pre>
+      </code>
+    </div> */}
     </div>
   );
 }
