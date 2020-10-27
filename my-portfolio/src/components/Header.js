@@ -8,15 +8,15 @@ class Header extends Component {
                 <div className="header item">
                     Steven Owen's Website
                 </div>
-                <div className="ui inverted secondary pointing menu">
+                <div className="ui inverted secondary pointing right menu">
                 <Link to="/" className="item">
                     Home
                 </Link>
                 <Link to="/about" className="item">
                     About
                 </Link>
-                <Link to="/projects" className="item">
-                    Projects
+                <Link to="/contact" className="item">
+                    Contact
                 </Link>
                 </div>
             </div>
