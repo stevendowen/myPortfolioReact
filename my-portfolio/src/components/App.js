@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../css/App.css';
 import db from '../firebase.js';
 import store from '../store/index.js';
+import Header from './Header.js';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   componentDidMount() {
@@ -13,22 +15,19 @@ class App extends Component {
   }
   render () {
     let test = store.getState().test;
-    console.log(test);
+    if(test.length > 0) {
+      console.log(test);
+    }
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/" component="" />
+          <Route exact path="/about" component="" />
+          <Route exact path="/projects" component="" />
+        </Switch>
+        <div className="App">
+        
         <div className="ui placeholder segment" >
           <div className="ui icon header">
             <i className="pdf file outline icon"></i>
@@ -37,6 +36,7 @@ class App extends Component {
           <div className="ui primary button">Add Document</div>
         </div>
       </div>
+      </Router>
     );
   }
 }
