@@ -8,34 +8,25 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 class App extends Component {
   componentDidMount() {
     store.subscribe(() => this.forceUpdate());
-    db.collection('test').get().then(querySnapshot => { 
+    db.collection('Apps').get().then(querySnapshot => { 
       const data = querySnapshot.docs.map(doc => doc.data());
-      store.dispatch({ type: 'SET_PRODUCT', test: data });
+      store.dispatch({ type: 'SET_APPS', apps: data });
     });
   }
   render () {
-    let test = store.getState().test;
+    let test = store.getState().apps;
     if(test.length > 0) {
       console.log(test);
     }
     return (
       <Router>
         <Header />
+        <div className="ui centered cards"></div>
         <Switch>
           <Route exact path="/" component="" />
-          <Route exact path="/about" component="" />
-          <Route exact path="/contact" component="" />
+          <Route path="/about" component="" />
+          <Route path="/contact" component="" />
         </Switch>
-        <div className="App">
-        
-        <div className="ui placeholder segment" >
-          <div className="ui icon header">
-            <i className="pdf file outline icon"></i>
-            No documents are listed for this customer.
-          </div>
-          <div className="ui primary button">Add Document</div>
-        </div>
-      </div>
       </Router>
     );
   }

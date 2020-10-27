@@ -2,10 +2,10 @@ import { createStore } from 'redux';
 
 function reducer (state, action) {
     switch (action.type) {
-        case 'SET_PRODUCT':
+        case 'SET_APPS':
             return {
                 ...state,
-                test: action.test,
+                apps: action.apps,
             }
         default:
             return state;
@@ -13,7 +13,7 @@ function reducer (state, action) {
 }
 
 const initialState = {
-    test: [],
+    apps: [],
 };
 
 const store = createStore(reducer, initialState);
