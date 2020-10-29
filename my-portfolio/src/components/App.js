@@ -4,8 +4,9 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import '../css/App.css';
 import db from '../firebase.js';
 import store from '../store/index.js';
-import Header from './Header.js';
-import AppList from './AppList.js';
+import Header from './Header';
+import AppList from './AppList';
+import About from './About';
 
 
 class App extends Component {
@@ -22,7 +23,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={AppList} />
-          <Route path="/about" component="" />
+          <Route path="/about" component={About} />
           <Route path="/contact" component="" />
         </Switch>
       </Router>

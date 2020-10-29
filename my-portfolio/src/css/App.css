@@ -1,3 +1,9 @@
+.ui.secondary.pointing.menu {
+    border: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .name {
     text-align: center;
     font-size: 100px;
@@ -8,7 +14,7 @@
 .images iframe {
     width: 1440px;
     height: 700px;
-  }
+}
 
 .images {
     position: absolute;
@@ -38,4 +44,8 @@
 .content {
     bottom: 30px;
     position: absolute;
+}
+
+p {
+    margin: 80px;
 }
