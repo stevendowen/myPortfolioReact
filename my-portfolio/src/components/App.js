@@ -20,14 +20,11 @@ class App extends Component {
     return (
       <Router>
         <Header />
-        <h1 className="name">Steven Owen</h1>
-        <div className="ui centered cards">
         <Switch>
           <Route exact path="/" component={AppList} />
           <Route path="/about" component="" />
           <Route path="/contact" component="" />
         </Switch>
-        </div>
       </Router>
     );
   }

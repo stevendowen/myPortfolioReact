@@ -4,8 +4,10 @@ import store from '../store/index.js';
 import AppImage from './AppImage.js';
 
 class AppList extends Component {
-    render () {
+
+    renderApps () {
         let apps = store.getState().apps;
+
         return apps.map((app, idx) => (
             <a href={app.url} className="ui raised link card" key={idx}>
                 <AppImage title={app.name} id={idx} url={app.url}/>
@@ -16,7 +18,18 @@ class AppList extends Component {
                 </div>
                 </div>
             </a>
-        )
+            )
+        );
+    }
+
+    render() {
+        return (
+            <div>
+                <h1 className="name">Steven Owen</h1>
+                <div className="ui centered cards">
+                    {this.renderApps()}
+                </div>
+            </div>
         );
     }
 }

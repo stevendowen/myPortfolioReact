@@ -6,7 +6,7 @@ class Header extends Component {
         return (
             <div className="ui secondary pointing menu">
                 <div className="header item">
-                    Steven's Website
+                    Steven Owen Apps
                 </div>
                 <div className="right menu">
                     <NavLink exact={true} activeClassName='active' to="/" className="item">
