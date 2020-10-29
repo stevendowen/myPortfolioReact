@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+
 import '../css/App.css';
 import db from '../firebase.js';
 import store from '../store/index.js';
 import Header from './Header.js';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import AppList from './AppList.js';
+
 
 class App extends Component {
   componentDidMount() {
@@ -14,19 +17,17 @@ class App extends Component {
     });
   }
   render () {
-    let test = store.getState().apps;
-    if(test.length > 0) {
-      console.log(test);
-    }
     return (
       <Router>
         <Header />
-        <div className="ui centered cards"></div>
+        <h1 className="name">Steven Owen</h1>
+        <div className="ui centered cards">
         <Switch>
-          <Route exact path="/" component="" />
+          <Route exact path="/" component={AppList} />
           <Route path="/about" component="" />
           <Route path="/contact" component="" />
         </Switch>
+        </div>
       </Router>
     );
   }
