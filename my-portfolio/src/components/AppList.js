@@ -2,11 +2,20 @@ import React, { Component } from 'react';
 
 import store from '../store/index.js';
 import AppImage from './AppImage.js';
+import Filter from './Filter.js';
 
 class AppList extends Component {
 
     renderApps () {
         let apps = store.getState().apps;
+        let filter = store.getState().filter;
+        console.log(filter);
+
+        if(filter !== 'All') {
+            apps = apps.filter(a => {
+                return a.description === filter || a.description.indexOf(filter) !== -1;
+            });
+        }
 
         return apps.map((app, idx) => (
             <a href={app.url} className="ui raised link card" key={idx}>
@@ -26,6 +35,7 @@ class AppList extends Component {
         return (
             <div>
                 <h1 className="name">Steven Owen</h1>
+                <Filter />
                 <div className="ui centered cards">
                     {this.renderApps()}
                 </div>

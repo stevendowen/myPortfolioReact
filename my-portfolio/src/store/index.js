@@ -6,7 +6,13 @@ function reducer (state, action) {
             return {
                 ...state,
                 apps: action.apps,
-            }
+            };
+        case 'FILTER': {
+            return {
+                ...state,
+                filter: action.value,
+            };
+        }
         default:
             return state;
     }
@@ -14,6 +20,7 @@ function reducer (state, action) {
 
 const initialState = {
     apps: [],
+    filter: 'All',
 };
 
 const store = createStore(reducer, initialState);

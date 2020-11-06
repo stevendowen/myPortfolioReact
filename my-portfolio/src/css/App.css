@@ -8,7 +8,7 @@
     text-align: center;
     font-size: 100px;
     margin-top: 10%!important;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
 }
 
 .images iframe {
@@ -48,4 +48,43 @@
 
 p {
     margin: 80px;
+}
+
+.ui.secondary.pointing.menu.filter{
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+  /* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+    .name {
+        font-size: 40px!important;
+    }
+}
+
+/* Portrait */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) { 
+    .name {
+        font-size: 40px!important;
+    }
+}
+
+/* Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) { 
+    .name {
+        font-size: 40px!important;
+    }
 }
