@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from './Footer';
 
 class Contact extends Component {
     render() {
@@ -9,13 +10,13 @@ class Contact extends Component {
                 </p>
                 <h3>Email</h3>
                 <a style={{display: "flex", flexDirection: "column", alignItems: "center"}} href="https://www.owen.steven.d@gmail.com">
-                    <i style={{fontSize: "25px"}} class="google icon"/>
+                    <i style={{fontSize: "25px"}} className="google icon"/>
                     <span>owen.steven.d@gmail.com</span>
                     <span>Click Here!</span>
                 </a>
                 <h3>LinkedIn</h3>
                 <a style={{display: "flex", flexDirection: "column", alignItems: "center"}} href="https://www.linkedin.com/in/steven-d-owen">
-                    <i style={{fontSize: "25px"}} class="linkedin icon"/>
+                    <i style={{fontSize: "25px"}} className="linkedin icon"/>
                     <span>https://www.linkedin.com/in/steven-d-owen</span>
                     <span>Click Here!</span>
                 </a>
@@ -25,6 +26,7 @@ class Contact extends Component {
                     <span>https://github.com/stevendowen</span>
                     <span>Click Here!</span>
                 </a>
+                <Footer />
             </div>
         );
     }

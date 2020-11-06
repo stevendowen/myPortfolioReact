@@ -1,3 +1,13 @@
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+#footer {
+    position: absolute;
+    bottom: -50%;
+}
+
 .ui.secondary.pointing.menu {
     border: none;
     margin-left: 5%;
@@ -111,6 +121,9 @@ and (-webkit-min-device-pixel-ratio: 3) {
     .ui.menu {
         font-size: 10px;
     }
+    .imgBox {
+        width: 60%;
+    }
 }
 
 /* Portrait */
@@ -125,6 +138,9 @@ and (orientation: portrait) {
     .ui.menu {
         font-size: 10px;
     }
+    .imgBox {
+        width: 60%;
+    }
 }
 
 /* Landscape */
@@ -138,5 +154,8 @@ and (orientation: landscape) {
     }
     .ui.menu {
         font-size: 10px;
+    }
+    .imgBox {
+        width: 60%;
     }
 }

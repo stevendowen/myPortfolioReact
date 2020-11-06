@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import store from '../store/index.js';
 import AppImage from './AppImage.js';
 import Filter from './Filter.js';
+import Footer from './Footer';
 
 class AppList extends Component {
 
@@ -27,6 +28,7 @@ class AppList extends Component {
                 </div>
                 </div>
             </a>
+            
             )
         );
     }
@@ -39,6 +41,7 @@ class AppList extends Component {
                 <div className="ui centered cards">
                     {this.renderApps()}
                 </div>
+                <Footer />
             </div>
         );
     }

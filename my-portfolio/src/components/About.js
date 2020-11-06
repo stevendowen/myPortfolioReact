@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Me from '../images/me.png';
+import Footer from './Footer';
 
 class About extends Component {
     render () {
@@ -17,6 +18,7 @@ class About extends Component {
                     Associate Degree program and am committed to maintaining cutting edge technical skills 
                     and up-to-date industry knowledge.
                 </p>
+                <Footer />
             </div>
         );
     }
