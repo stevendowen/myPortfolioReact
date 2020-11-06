@@ -9,6 +9,7 @@
     font-size: 100px;
     margin-top: 10%!important;
     margin-bottom: 3%;
+    font-family: 'Architects Daughter', cursive;
 }
 
 .images iframe {
@@ -47,7 +48,9 @@
 }
 
 p {
-    margin: 80px;
+    margin: 0 20%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .ui.secondary.pointing.menu.filter{
