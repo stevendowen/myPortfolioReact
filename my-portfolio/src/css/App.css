@@ -6,7 +6,7 @@
 
 .name {
     text-align: center;
-    font-size: 100px;
+    font-size: 90px;
     margin-top: 10%!important;
     margin-bottom: 3%;
     font-family: 'Architects Daughter', cursive;
@@ -58,6 +58,29 @@ p {
     margin-bottom: 10%;
 }
 
+.aboutBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name.about {
+    margin-top: 6%!important;
+}
+
+.imgBox {
+    display: flex;
+    justify-content: center;
+    background-color: #E2E2E2;
+    width: 25%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+img {
+    width: 450px;
+}
+
   /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
@@ -67,6 +90,9 @@ and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3) { 
     .name {
         font-size: 40px!important;
+    }
+    .ui.menu {
+        font-size: 10px;
     }
 }
 
@@ -79,6 +105,9 @@ and (orientation: portrait) {
     .name {
         font-size: 40px!important;
     }
+    .ui.menu {
+        font-size: 10px;
+    }
 }
 
 /* Landscape */
@@ -89,5 +118,8 @@ and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) { 
     .name {
         font-size: 40px!important;
+    }
+    .ui.menu {
+        font-size: 10px;
     }
 }
