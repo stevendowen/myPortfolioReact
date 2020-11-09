@@ -10,7 +10,6 @@ class AppList extends Component {
     renderApps () {
         let apps = store.getState().apps;
         let filter = store.getState().filter;
-        console.log(filter);
 
         if(filter !== 'All') {
             apps = apps.filter(a => {

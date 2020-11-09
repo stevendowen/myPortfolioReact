@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import store from '../store';
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,24 +17,24 @@ class Filter extends Component {
     render() {
         return (
             <div className="ui secondary pointing menu filter">
-                <a className="item" onClick={this.handleClick}>
+                <Link to="" className="item" onClick={this.handleClick}>
                     All
-                </a>
-                <a className="item" onClick={this.handleClick}>
+                </Link>
+                <Link to="" className="item" onClick={this.handleClick}>
                     HTML
-                </a>
-                <a className="item" onClick={this.handleClick}>
+                </Link>
+                <Link to="" className="item" onClick={this.handleClick}>
                     JavaScript
-                </a>
-                <a className="item" onClick={this.handleClick}>
+                </Link>
+                <Link to="" className="item" onClick={this.handleClick}>
                     NodeJS
-                </a>
-                <a className="item" onClick={this.handleClick}>
+                </Link>
+                <Link to="" className="item" onClick={this.handleClick}>
                     ReactJS
-                </a>
-                <a className="item" onClick={this.handleClick}>
+                </Link>
+                <Link to="" className="item" onClick={this.handleClick}>
                     Angular
-                </a>
+                </Link>
             </div>
         );
     }

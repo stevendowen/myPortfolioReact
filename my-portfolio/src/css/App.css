@@ -1,11 +1,5 @@
 html, body {
-    height: 100%;
-    position: relative;
-}
-
-#footer {
-    position: absolute;
-    bottom: -50%;
+    height: 0;
 }
 
 .ui.secondary.pointing.menu {
@@ -82,13 +76,18 @@ p {
     display: flex;
     justify-content: center;
     background-color: #E2E2E2;
-    width: 25%;
+    width: 30%;
     border-radius: 5px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }
 
 img {
-    width: 450px;
+    width: 700px;
 }
 
 .contactBox {
@@ -122,7 +121,10 @@ and (-webkit-min-device-pixel-ratio: 3) {
         font-size: 10px;
     }
     .imgBox {
-        width: 60%;
+        width: 90%;
+    }
+    img {
+        width: 100px;
     }
 }
 
@@ -139,7 +141,10 @@ and (orientation: portrait) {
         font-size: 10px;
     }
     .imgBox {
-        width: 60%;
+        width: 90%;
+    }
+    img {
+        width: 100px;
     }
 }
 
@@ -156,6 +161,9 @@ and (orientation: landscape) {
         font-size: 10px;
     }
     .imgBox {
-        width: 60%;
+        width: 90%;
+    }
+    img {
+        width: 100px;
     }
 }
