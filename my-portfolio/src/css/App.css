@@ -86,9 +86,9 @@ p {
     justify-content: center;
 }
 
-img {
+/* img {
     width: 700px;
-}
+} */
 
 .contactBox {
     margin-top: 10%;
@@ -123,9 +123,9 @@ and (-webkit-min-device-pixel-ratio: 3) {
     .imgBox {
         width: 90%;
     }
-    img {
+    /* img {
         width: 100px;
-    }
+    } */
 }
 
 /* Portrait */
@@ -143,9 +143,9 @@ and (orientation: portrait) {
     .imgBox {
         width: 90%;
     }
-    img {
+    /* img {
         width: 100px;
-    }
+    } */
 }
 
 /* Landscape */
@@ -163,7 +163,7 @@ and (orientation: landscape) {
     .imgBox {
         width: 90%;
     }
-    img {
+    /* img {
         width: 100px;
-    }
+    } */
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Me from '../images/me.png';
+import Me from '../images/me.png';
 
 
 class About extends Component {
@@ -7,9 +7,9 @@ class About extends Component {
         return (
             <div className="aboutBox">
                 <h1 className="name about">I'm Steven Owen</h1>
-                {/* <div className="imgBox">
-                    <img src={Me} alt="Steven Owen"/>
-                </div> */}
+                <div style={{backgroundColor: "#E2E2E2"}} className="ui raised compact segment">
+                    <img className="ui centered small image" src={Me} alt="Steven Owen"/>
+                </div>
                 <p> 
                     I am a highly motivated Web Developer pursuing opportunity to further my career.
                     I am a recent graduate from Mountainland Tech College that was asked by start-up 
